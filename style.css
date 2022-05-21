@@ -1,0 +1,91 @@
+.wrapper {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid rgb(220, 220, 220); */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.display-wrapper {
+    background-color: rgb(210, 210, 210);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 125px;
+    flex-grow: 0;
+    font-family: sans-serif;
+    font-size: 40pt;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.display {
+    padding: 20px;
+    flex: 1;
+    font-weight: 100;
+}
+
+.button-container {
+    background-color: rgb(210, 210, 210);
+    width: 300px;
+    height: 375px;
+    flex-grow: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1px;
+}
+
+.digit-button, .operator-button, .clear-button, .result-button {
+    font-family: sans-serif;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.digit-button {
+    background-color: rgb(240, 240, 240);
+    color: rgb(160, 160, 160);
+    display: flex;
+    align-items: center;
+}
+
+.digit {
+    flex: 1
+}
+
+.operator-button {
+    background-color: rgb(247, 160, 89);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.operator {
+    flex: 1
+}
+
+.clear-button, .result-button {
+    background-color: rgb(140, 140, 140);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.clear, .result {
+    flex: 1
+}
+
